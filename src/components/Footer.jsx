@@ -3,7 +3,11 @@
 const Footer = () => {
     return (
         <>
-            <h1>This is Footer Component</h1>
+            <footer className="bg-black py-8 text-center text-white">
+                <div className="container">
+                   Copyright &copy; 2024. All rights reserved.
+                </div>
+            </footer>
         </>
     );
 };

@@ -2,6 +2,7 @@ import Header from "../components/Header.jsx";
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
 import PropertyDetails from "../components/PropertyDetails.jsx";
+import Footer from "../components/Footer.jsx";
 
 const PropertyDetailsPage = () => {
     const { pathname } = useLocation();
@@ -18,10 +19,9 @@ const PropertyDetailsPage = () => {
         <>
             <div className="max-w-[1440px] mx-auto bg-white">
                 <Header/>
-                <div className="min-h-[1800px]">
-                    <PropertyDetails/>
-                </div>
+                <PropertyDetails/>
             </div>
+            <Footer/>
         </>
     );
 };

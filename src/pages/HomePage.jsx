@@ -3,6 +3,7 @@ import Banner from "../components/Banner.jsx";
 import HouseList from "../components/HouseList.jsx";
 import {useLocation} from "react-router-dom";
 import {useEffect} from "react";
+import Footer from "../components/Footer.jsx";
 
 
 const HomePage = () => {
@@ -27,6 +28,7 @@ const HomePage = () => {
                     <HouseList/>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };
