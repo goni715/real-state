@@ -13,22 +13,22 @@ const PriceRangeDropdown = () => {
     return (
         <>
 
-            <Menu as="div" className="dropdown w-full lg:max-w-[296px] cursor-pointer relative">
-                <MenuButton onClick={()=>setIsOpen(!isOpen)} className="dropdown-btn flex h-[64px] items-center px-[18px] border rounded-lg w-full text-left">
-                    <RiWallet3Line className="dropdown-icon-primary text-2xl mr-[18px] text-violet-700"/>
+            <Menu as="div" className="dropdown relative">
+                <MenuButton onClick={()=>setIsOpen(!isOpen)} className="dropdown-btn w-full text-left">
+                    <RiWallet3Line className="dropdown-icon-primary"/>
                     <div>
                         <div className="text-[15px] font-medium leading-tight">{price}</div>
                         <div className="text-[13px]">Choose price range</div>
                     </div>
                     {isOpen ? (
-                        <RiArrowUpSLine className="dropdown-icon-secondary text-2xl ml-auto text-violet-700"/>
+                        <RiArrowUpSLine className="dropdown-icon-secondary"/>
                     ):(
-                        <RiArrowDownSLine className="dropdown-icon-secondary text-2xl ml-auto text-violet-700"/>
+                        <RiArrowDownSLine className="dropdown-icon-secondary"/>
                     )
                     }
                 </MenuButton>
 
-                <MenuItems className="dropdown-menu list-none px-6 py-8 text-[15px] space-y-6 shadow-md bg-white absolute w-full z-10">
+                <MenuItems className="dropdown-menu">
                     {priceRangeData?.map((item,i)=>{
                         return(
                             <MenuItem
